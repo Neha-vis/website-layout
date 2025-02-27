@@ -286,6 +286,8 @@
   border-radius: 10px;
   margin-top: 10px;
   height: 58vh;
+  object-fit: cover;
+  object-position: center;
 }
 .section-3 p {
   margin-bottom: 20px;
@@ -308,6 +310,9 @@
 .section-4 {
   padding: 80px 0;
 }
+.accordian-button {
+  color: var(--light);
+}
 
 .accordion-wrapper {
   display: flex;
@@ -316,6 +321,11 @@
   align-items: flex-start;
   gap: 50px;
   margin-top: 50px;
+}
+
+.accordion .accordion-button {
+  background: var(--light);
+  border: var(--dark-alt);
 }
 .accordion-wrapper .accordion-title {
   flex: 1;
@@ -330,4 +340,124 @@
 .accorion-wrapper .accordion-text-wrapper p {
   font-size: 14px;
   font-weight: 600;
+}
+/* section 5 */
+
+.section-5 {
+  padding: 50px 0;
+}
+.section5-inner h1 {
+  font-size: 35px;
+  font-weight: 700;
+  color: var(--dark);
+}
+.section5-inner {
+  display: flex;
+  gap: 125px;
+}
+.section-5 nav {
+  display: flex;
+  gap: 170px;
+
+  align-items: center;
+}
+.section-5 nav ul {
+  gap: 15px;
+}
+.content-end h1 {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--dark);
+}
+/* swiper */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.section-6-slider .slider-image {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.section-6-slider .slider-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.swiper-slide span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 30px 0;
+  font-size: 20px;
+  color: var(--light);
+  text-align: center;
+  background: linear-gradient(to top, black, transparent);
+}
+.design-map {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.design-map img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.design-button {
+  margin-top: 20px;
+}
+.design-map h3 {
+  color: var(--dark);
+  font-size: 46px;
+  font-weight: 700;
+  position: absolute;
+  top: 42%;
+  left: 19%;
+  align-items: center;
+  text-align: center;
+}
+.design-map .card-button {
+  position: absolute;
+
+  left: 45%;
+  margin-top: -36%;
+}
+
+/* footer */
+
+.footer {
+  background: var(--dark);
+  padding: 40px 0px;
+}
+.footer-inner {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo p {
+  color: var(--light);
+  font-size: 14px;
+}
+.search-btn {
+  width: 300px;
+  height: 50px;
+  border: none;
+  background: var(--light);
 }

@@ -47,16 +47,38 @@
 .header nav ul {
   gap: 10px;
 }
+
 /* section */
-.section .section-title {
-  font-size: 45px;
+.section-1 {
+  padding: 80px 0;
+}
+.section-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+}
+.section-wrapper .section-title1 {
+  flex: 3;
+  font-size: 81px;
   font-weight: 700;
-  margin-top: 50px;
+  line-height: 78px;
 }
-.section .section-description {
-  font-size: 15px;
-  margin-top: 100px;
+
+.section-wrapper .text1-wrapper {
+  flex: 1;
+  display: flex;
+
+  align-items: flex-start;
 }
+
+.section-wrapper .text1-wrapper p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 45px;
+  margin-left: 50px;
+}
+
 .section-inner {
   margin-top: 50px;
   transition: 0.5s ease all;
@@ -80,27 +102,26 @@
 }
 .section-inner .btn {
   position: absolute;
-  bottom: 3%;
+  bottom: 10%;
   left: 5%;
   margin-top: -50%;
 }
-.card {
+.section-inner .card {
   position: absolute;
-  bottom: -6%;
+  bottom: 1%;
   right: 5%;
   width: 300px;
-  height: 250px;
+  height: 265px;
   background: var(--light);
   color: var(--dark);
   padding: 20px;
   border-radius: 15px;
   box-shadow: var(--shadow);
-  transition: 0.5s ease all;
-
+  transition: 0.5sease all;
   z-index: 2;
 }
 
-.card i {
+.section-inner .card i {
   font-size: 35px;
   display: flex;
   align-items: center;
@@ -108,7 +129,7 @@
   margin-top: 2px;
 }
 
-.card p {
+.section-inner .card p {
   margin-top: 50px;
   color: var(--dark);
   text-transform: capitalize;
@@ -121,8 +142,16 @@
   gap: 5px;
   text-align: center;
 }
-.card .card-button .button {
-  gap: 5px;
+
+/* section-2 */
+.section-2 {
+  padding: 2px 0;
+}
+/* navtabs */
+.nav-tabs .nav-link {
+  border-bottom: 2px solid var(--dark);
+  padding-bottom: 10px;
+  color: var(--dark);
 }
 /* content */
 
@@ -131,30 +160,30 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: 50px;
-  margin-top: 50px;
+  margin-top: 95px;
   margin-bottom: 50px;
 }
 
-.section-title {
+.content-wrapper .section-title {
   flex: 1;
   font-size: 45px;
   font-weight: 700;
 }
 
-.text-wrapper {
+.content-wrapper .text-wrapper {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.text-wrapper p {
-  font-size: 16px;
+.content-wrapper .text-wrapper p {
+  font-size: 15px;
   font-weight: 600;
 }
 
-.card-button {
-  margin-top: 15px;
+.text-wrapper .card-button {
+  margin-top: 20px;
 }
 
 /* card */
@@ -189,4 +218,91 @@
   top: 84%;
   left: 4%;
   font-size: 16px;
+}
+.card-design .btn i {
+  margin-left: 8px;
+  font-size: 16px;
+}
+/* section 3 */
+
+.section-3 {
+  padding: 80px 0;
+}
+
+.section-3 .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  max-width: 1142px;
+  margin: auto;
+}
+
+.section-3 .left-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Social Media Buttons */
+.section-3 .btn {
+  display: flex;
+  gap: 10px;
+}
+
+.section-3 .tracking {
+  color: gray;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.section-3 .title {
+  font-size: 24px;
+  font-weight: bold;
+  max-width: 350px;
+  line-height: 1.5;
+}
+
+.section-3.card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 320px;
+  position: relative;
+}
+
+.section-3.card h3 {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-3.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  height: 70vh;
+}
+
+.section-3 .right-content {
+  color: var(--dark);
+  max-width: 400px;
+}
+
+.section-3 .right-content p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.section-3::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 2px;
+  background-color: #ddd;
+  margin: 50px auto;
 }

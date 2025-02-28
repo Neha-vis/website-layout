@@ -420,6 +420,7 @@
 }
 .design-button {
   margin-top: 20px;
+  position: relative;
 }
 .design-map h3 {
   color: var(--dark);
@@ -444,26 +445,22 @@
   background: var(--dark);
   padding: 40px 0px;
 }
-.footer-inner {
+.footer-Btn-input {
+  background: var(--light);
+  border: none;
+  padding: 8px 20px;
+  color: var(--dark);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 50px;
   display: flex;
-  gap: 50px;
-  align-items: center;
-  justify-content: space-between;
+  width: 400px;
+  height: 50px;
+  justify-content: end;
 }
 
-.footer-logo p {
-  color: var(--light);
-  font-size: 14px;
-}
-.search-btn {
-  width: 300px;
-  height: 50px;
-  border: none;
-  background: var(--light);
-}
-.footer-inner {
-  display: flex;
-  gap: 10px;
+.footer-Btn-input p {
+  color: var(--dark-alt);
+
   align-items: center;
-  justify-content: space-between;
 }
